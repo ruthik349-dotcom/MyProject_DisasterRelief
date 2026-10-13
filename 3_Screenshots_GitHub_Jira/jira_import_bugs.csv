@@ -1,0 +1,29 @@
+Summary,Issue Type,Priority,Description
+"Requisition accepted with zero quantity or unknown item",Bug,High,"Related requirement: FR-001
+Steps to reproduce: Shelter Coordinator submits a requisition with quantity 0 (or item ""pizza"").
+Expected: System rejects it and shows a validation error.
+Actual: The requisition is saved and appears in the dispatch queue."
+"Same warehouse stock allocated to two requisitions",Bug,High,"Related requirement: FR-002
+Steps to reproduce: Create two requisitions for 80 water with only 100 in stock; two managers click Allocate at the same time.
+Expected: The second requisition receives only the remaining 20 and stock never goes below zero.
+Actual: Both receive 80 and warehouse stock goes negative."
+"Unqualified volunteer appears in dispatch list",Bug,Medium,"Related requirement: FR-003
+Steps to reproduce: Create a task needing first aid and driving; one registered volunteer has only driving (another is unverified).
+Expected: Only verified, available volunteers with both skills are listed.
+Actual: The driving-only and the unverified volunteers are also listed."
+"Delivery can be marked Delivered before it leaves the warehouse",Bug,High,"Related requirement: FR-004
+Steps to reproduce: Open a delivery in status Loaded and change it straight to Delivered.
+Expected: System rejects the change (Loaded can only go to In Transit).
+Actual: Status becomes Delivered and the requisition closes."
+"Situation report totals include cancelled requisitions",Bug,Medium,"Related requirement: FR-005
+Steps to reproduce: Generate a report for a period that contains cancelled requisitions.
+Expected: Cancelled requisitions are excluded from needs and totals.
+Actual: Report includes them and inflates unmet-need totals."
+"Dashboard shows a blank map when the device is offline",Bug,High,"Related requirement: NFR-001
+Steps to reproduce: Load the dashboard online, switch to airplane mode, reload the page.
+Expected: Cached map tiles and last-synced shelter data are shown with an ""Offline"" banner.
+Actual: Blank map and a network error are shown."
+"Relief Volunteer can run supply allocation",Bug,Highest,"Related requirement: NFR-002
+Steps to reproduce: Log in as a Relief Volunteer and call POST /api/allocations/run.
+Expected: System returns 403 Forbidden; only a Disaster Manager may allocate.
+Actual: Request succeeds and warehouse stock changes."

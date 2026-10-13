@@ -1,0 +1,8 @@
+Summary,Issue Type,Priority,Story Points,Sprint,Description
+"FR-001 - Submit Supply Requisitions with Priority",Story,High,5,Sprint 1,"Requirement FR-001 for Problem Statement #64"
+"FR-002 - Match Requisitions to Warehouse Stock",Story,High,8,Sprint 1,"Requirement FR-002 for Problem Statement #64"
+"FR-003 - Skill-Based Volunteer Dispatch",Story,High,8,Sprint 2,"Requirement FR-003 for Problem Statement #64"
+"FR-004 - Track Relief Vehicle Deliveries",Story,High,8,Sprint 2,"Requirement FR-004 for Problem Statement #64"
+"FR-005 - Situation Map and Report",Story,Medium,3,Sprint 2,"Requirement FR-005 for Problem Statement #64"
+"NFR-001 - Low-Bandwidth and Offline GIS Access",Story,High,8,Sprint 2,"Requirement NFR-001 for Problem Statement #64"
+"NFR-002 - Verified, Role-Based Access",Story,High,5,Sprint 2,"Requirement NFR-002 for Problem Statement #64"

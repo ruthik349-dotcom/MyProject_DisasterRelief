@@ -1,0 +1,1 @@
+Layered (4-tier) architecture: React offline-first PWA, Express API, service modules, PostgreSQL/PostGIS. Technologies are proposed. See Architecture_Diagram.png (editable source: Architecture_Diagram.svg).
